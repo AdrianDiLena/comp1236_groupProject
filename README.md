@@ -1,9 +1,4 @@
 # comp1236_groupProject
-
-Here’s the content formatted cleanly into Markdown (no bold headings):
-
----
-
 ## COMP1236 Group Project – Fall 2025
 
 Use Git Bash for this entire project. To achieve the required functionality, use only the programming constructs taught in class.
@@ -130,7 +125,3 @@ This file must contain:
    `Group_No_Application.sh`
 3. A document describing the software used and how work was distributed among team members.
 4. Three AI declaration forms (one for each group member).
-
----
-
-If you want, I can also turn this into a cleaned-up template file or help write the shell script structure.
