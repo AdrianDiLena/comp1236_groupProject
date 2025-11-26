@@ -10,14 +10,27 @@ echo "Thank you, we're almost ready."
 echo "Please enter two numbers for the range of the sequence."
 read range_1
 read range_2
-echo "Now please enter your banking PIN number... just kidding... brb."
-
+echo "################################################################"
 term_sum=0
 
-for (( n=range_1; n<=range_2; n++ )); do        # For loop using user input range_1, range_2
-    echo "Term Sum is: "$term_sum               # State the sum of all terms each loop cycle
-    term=$((const_a*n**2+const_b*n+const_c))    # Calculate the terms from using the Quadratic Sequence equation 
-    echo "Term is "$term                        # Print the term/result of the equation 
-    term_sum=$(( term_sum + term ))             # Add the most recent term to the variable representing the sum of quadratic terms  
+for (( n=range_1; n<=range_2; n++ )); do        
+    term=$((const_a*n**2+const_b*n+const_c))
+    if [ $n -eq $range_1 ]; then
+        first_term=$term
+    fi    
+    echo $term
+    term_sum=$(( term_sum + term ))
 done
-echo "The sum of Terms: "$term_sum
+
+echo "The sum total of Terms: "$term_sum
+echo "The product of the first term ("$first_term") and last term ("$term") is: "
+product_term=$((first_term*term))
+echo $product_term
+echo "Choose a number:"
+read product_num
+
+if (( (first_term * term) % product_num == 0 )); then
+    echo "The product of the first and last terms is divisible by "$product_num"!!!"
+else 
+    echo "The product of the first and last terms is not divisible by" $product_num ", sorry."
+fi
