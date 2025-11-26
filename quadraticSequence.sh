@@ -22,6 +22,8 @@ for (( n=range_1; n<=range_2; n++ )); do
     term_sum=$(( term_sum + term ))
 done
 
+# Still need to add in part of script that checks if terms are prime. 
+
 echo "The sum total of Terms: "$term_sum
 echo "The product of the first term ("$first_term") and last term ("$term") is: "
 product_term=$((first_term*term))
