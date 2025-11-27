@@ -10,7 +10,7 @@ echo "Thank you, we're almost ready."
 echo "Please enter two numbers for the range of the sequence."
 read range_1
 read range_2
-echo "################################################################"
+echo "######################################################################$"
 term_sum=0
 
 for (( n=range_1; n<=range_2; n++ )); do        
@@ -26,7 +26,7 @@ done
 
 echo "The sum total of Terms: "$term_sum
 echo "The product of the first term ("$first_term") and last term ("$term") is: "
-product_term=$((first_term*term))
+product_term=$(( first_term*term ))
 echo $product_term
 echo "Choose a number:"
 read product_num
@@ -36,3 +36,5 @@ if (( (first_term * term) % product_num == 0 )); then
 else 
     echo "The product of the first and last terms is not divisible by" $product_num ", sorry."
 fi
+echo "And that concludes the quadratic sequence portion of this application."
+echo "Have a nice day."
