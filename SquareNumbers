@@ -3,6 +3,8 @@ read -p "Pick a number: " a
 read -p "How long will the list be pick a number: " list
 read -p "sum of two consecutive square maximum value: " value
 
+#odd position code
+
 a=$a
 x=0
 
@@ -13,7 +15,7 @@ do
     x=$((x + 1))
 done
 
-#
+# two consecutive squares
 
 y=1
 total=0
