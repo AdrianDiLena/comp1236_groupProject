@@ -45,9 +45,9 @@ for (( n=range_1; n<=range_2; n++ )); do
         fi
        
         if (( is_prime == 0 )); then
-            echo $term " - This term IS a prime number."
+            echo $term " -> This term IS a prime number."
         else
-            echo $term " - This term is NOT a prime number."
+            echo $term " -  This term is NOT a prime number."
         fi
 
     term_sum=$(( term_sum + term ))
@@ -57,7 +57,9 @@ echo "The sum total of Terms: "$term_sum
 echo
 echo "######################################################################"
 echo
+
 product_term=$(( first_term*term ))
+
 echo "The product of the first term ("$first_term") and last term ("$term") is: "$product_term
 echo 
 echo "Choose a number:"
@@ -69,6 +71,8 @@ if (( (first_term * term) % product_num == 0 )); then
 else 
     echo "The product of the first and last terms is not divisible by" $product_num ", sorry."
 fi
+
+echo
 echo "######################################################################"
 echo
 echo "And that concludes the quadratic sequence portion of this application."
