@@ -4,7 +4,7 @@ echo "Hello!"
 echo
 echo "Welcome to the quadratic sequencing portion of tonight's application. Please enjoy."
 echo "Please enter 3 non-negative numbers:"
-
+echo
 read const_a
 read const_b
 read const_c
