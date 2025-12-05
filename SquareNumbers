@@ -1,3 +1,4 @@
+SquareNum_Function(){
 
 read -p "Pick a number: " a
 read -p "How long will the list be pick a number: " list
@@ -35,3 +36,5 @@ do
 done
 
 echo "Total odd numbers: $total"
+}
+SquareNum_Function
