@@ -10,7 +10,7 @@ while [ $attempts -lt 3 ]; do
         echo "Access granted! Welcome User!"
         break
     fi
-
+#attempts
     attempts=$((attempts+1))
 
     if [ $attempts -eq 2 ]; then
