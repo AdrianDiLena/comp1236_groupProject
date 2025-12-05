@@ -1,1 +1,28 @@
+#password
+PASSWORD="w22"
+attempts=0
+
+while [ $attempts -lt 3 ]; do
+    read -s -p "Enter password: " input
+    echo
+
+    if [[ "$input" == "$PASSWORD" ]]; then
+        echo "Access granted! Welcome User!"
+        break
+    fi
+
+    attempts=$((attempts+1))
+
+    if [ $attempts -eq 2 ]; then
+        echo "Incorrect password. Last Try"
+    elif [ $attempts -lt 3 ]; then
+        echo "Incorrect password. 2 Attempts Left!!"
+    fi
+done
+
+if [ $attempts -eq 3 ]; then
+    echo "You Have failed to enter the PASSWORD!"
+    exit 1
+fi
+
 
