@@ -80,15 +80,15 @@ quad_seq_function() {
     echo "Welcome to the quadratic sequencing portion of tonight's application. Please enjoy."
     echo "Please enter 3 non-negative numbers:"
     echo
-    read const_a
-    read const_b
-    read const_c
+    read -p "Number 1: " const_a
+    read -p "Numero 2: " const_b
+    read -p "Nombre 3: " const_c
     echo
     echo "Thank you, we're almost ready."
     echo "Please enter two numbers for the range of the sequence."
     echo
-    read range_1
-    read range_2
+    read -p "Start of Range: " range_1
+    read -p "End of Range: " range_2
     echo
     echo "######################################################################"
     echo
@@ -205,6 +205,8 @@ mainMenu() {
 
     done
 }
+
+# Invoking functions at start-up of application... 
 
 password
 mainMenu
