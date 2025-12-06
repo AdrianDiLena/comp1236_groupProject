@@ -181,7 +181,7 @@ mainMenu() {
         # Ensure Task1, Task2, and Task3 functions are defined before MainMenu is called
         case "$task" in
             H|h)
-                Task1
+                echo "Task not complete. Please pick another task."
                 ;;
             S|s)
                 SquareNum_Function
