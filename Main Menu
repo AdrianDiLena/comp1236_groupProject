@@ -1,6 +1,6 @@
 MainMenu() {
 
-    while true; do
+    while true;
 
         echo
         echo "======== Main Menu ========"
