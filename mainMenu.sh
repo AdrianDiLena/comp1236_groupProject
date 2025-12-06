@@ -1,6 +1,7 @@
-MainMenu() {
+mainMenu() {
 
-    while true;
+    # FIXED: Added 'do' after the semicolon
+    while true; do
 
         echo
         echo "======== Main Menu ========"
@@ -18,8 +19,7 @@ MainMenu() {
 
         read -p "Enter a task: " task
 
-
-#re-name function name with (task1,2,3)
+        # Ensure Task1, Task2, and Task3 functions are defined before MainMenu is called
         case "$task" in
             H|h)
                 Task1
@@ -40,8 +40,11 @@ MainMenu() {
         esac
 
         echo
+        # This creates a pause so the user can see the output of the task
         read -p "Press Enter to return to menu..."
         echo
 
     done
 }
+
+mainMenu
