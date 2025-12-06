@@ -18,6 +18,8 @@ MainMenu() {
 
         read -p "Enter a task: " task
 
+
+#re-name function name with (task1,2,3)
         case "$task" in
             H|h)
                 Task1
